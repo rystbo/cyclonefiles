@@ -1,0 +1,107 @@
+
+
+Here i go over:
+
+-item_base
+-type (all possible values)
+
+
+So first lets view all the types, these are also known as interaction types. There are a fuck ton of these. 
+
+Here is arcturus:
+
+'default','crafting','pet','landscape','gate','wallpaper','floor','guild_forum','scoreboard','bottle','bed','guild_furni','guild_gate','background_toner','badge_display','mannequin','ads_bg','trophy','vendingmachine','pressureplate','colorplate','multiheight','dice','colorwheel','cannon','teleport','teleporttile','crackable','crackable_master','nest','pet_drink','pet_food','pet_toy','breeding_nest','obstacle','monsterplant_seed','gift','stack_helper','puzzle_box','hopper','costume_hopper','club_hopper','club_gate','club_teleporttile','onewaygate','love_lock','clothing','roller','postit','dimmer','rentable_space','pyramid','musicdisc','fireworks','talking_furni','water_item','water','viking_cotie','tile_fxprovider_nfs','mutearea','information_terminal','external_image','youtube','jukebox','switch','fx_box','blackhole','effect_toggle','room_o_matic','effect_tile','sticky_pole','trap','tent','gym_equipment','handitem','handitem_tile','effect_giver','effect_vendingmachine','crackable_monster','snowboard_slope','timer','wf_trg_walks_on_furni','wf_trg_walks_off_furni','wf_trg_enter_room','wf_trg_says_something','wf_trg_periodically','wf_trg_period_long','wf_trg_state_changed','wf_trg_at_given_time','wf_trg_at_time_long','wf_trg_collision','wf_trg_game_starts','wf_trg_game_ends','wf_trg_bot_reached_stf','wf_trg_bot_reached_avtr','wf_trg_says_command','wf_trg_score_achieved','wf_trg_idles','wf_trg_unidles','wf_trg_starts_dancing','wf_trg_stops_dancing','wf_act_toggle_state','wf_act_reset_timers','wf_act_match_to_sshot','wf_act_move_rotate','wf_act_give_score','wf_act_show_message','wf_act_teleport_to','wf_act_join_team','wf_act_leave_team','wf_act_chase','wf_act_flee','wf_act_move_to_dir','wf_act_give_score_tm','wf_act_toggle_to_rnd','wf_act_move_furni_to','wf_act_give_reward','wf_act_call_stacks','wf_act_kick_user','wf_act_mute_triggerer','wf_act_bot_teleport','wf_act_bot_move','wf_act_bot_talk','wf_act_bot_give_handitem','wf_act_bot_follow_avatar','wf_act_bot_clothes','wf_act_bot_talk_to_avatar','wf_act_give_diamonds','wf_act_give_credits','wf_act_give_duckets','wf_act_give_badge','wf_act_forward_user','wf_act_roller_speed','wf_act_raise_furni','wf_act_lower_furni','wf_act_give_respect','wf_act_alert','wf_act_give_handitem','wf_act_match_to_sshot2','wf_act_give_effect','wf_cnd_has_furni_on','wf_cnd_furnis_hv_avtrs','wf_cnd_stuff_is','wf_cnd_actor_in_group','wf_cnd_user_count_in','wf_cnd_wearing_effect','wf_cnd_wearing_badge','wf_cnd_time_less_than','wf_cnd_match_snapshot','wf_cnd_time_more_than','wf_cnd_not_furni_on','wf_cnd_not_hv_avtrs','wf_cnd_not_stuff_is','wf_cnd_not_user_count','wf_cnd_not_wearing_fx','wf_cnd_not_wearing_b','wf_cnd_not_in_group','wf_cnd_not_in_team','wf_cnd_not_match_snap','wf_cnd_not_trggrer_on','wf_cnd_actor_in_team','wf_cnd_trggrer_on_frn','wf_cnd_has_handitem','wf_cnd_date_rng_active','wf_cnd_motto_contains','wf_cnd_battlebanzai','wf_cnd_not_battlebanzai','wf_cnd_freeze','wf_cnd_not_freeze','wf_cnd_habbo_has_rank','wf_cnd_habbo_not_rank','wf_cnd_habbo_has_diamonds','wf_cnd_habbo_has_credits','wf_cnd_habbo_has_duckets','wf_cnd_not_habbo_has_diamonds','wf_cnd_not_habbo_has_credits','wf_cnd_not_habbo_has_duckets','wf_cnd_habbo_owns_badge','wf_cnd_not_habbo_owns_badge','wf_cnd_habbo_is_dancing','wf_cnd_not_habbo_is_dancing','wf_xtra_random','wf_xtra_unseen','wf_blob','wf_highscore','battlebanzai_timer','battlebanzai_tile','battlebanzai_random_teleport','battlebanzai_sphere','battlebanzai_puck','battlebanzai_gate_blue','battlebanzai_gate_green','battlebanzai_gate_red','battlebanzai_gate_yellow','battlebanzai_counter_blue','battlebanzai_counter_green','battlebanzai_counter_red','battlebanzai_counter_yellow','freeze_block','freeze_tile','freeze_exit','freeze_timer','freeze_gate_blue','freeze_gate_green','freeze_gate_red','freeze_gate_yellow','freeze_counter_blue','freeze_counter_green','freeze_counter_red','freeze_counter_yellow','icetag_pole','icetag_field','bunnyrun_pole','bunnyrun_field','rollerskate_field','football','football_gate','football_counter_blue','football_counter_green','football_counter_red','football_counter_yellow','football_goal_blue','football_goal_green','football_goal_red','football_goal_yellow','snowstorm_tree','snowstorm_machine','credits_slotmachine','diamonds_slotmachine','duckets_slotmachine','snowstorm_pile'
+
+
+
+Also here are all the variables for "type" that is below in items_base : 's','i','e','h','v','r','b','p'    I Cant compare this to morning star because theres only shows an "s"
+
+Ill explain each one and what they are for
+
+S= your typical furni, can be a chair, floor item what ever
+I= These are wall items
+E= Effects, i have 4 in my catalog with this but none are the right effect because retros dont use effects, they have an :enable command
+H- This is for the habbo club deal
+v- Im not sure, i dont have anything that uses this 
+r- These are for bots
+b- these are for badges
+p- these are for pets
+
+
+As you can see there are a ton. Now morningstar ads a few features like slot machine interactions. Here is the thing with morningstar, there interactions are all under default, i will explain this below.
+
+
+
+INSERT INTO `arcturus`.`items_base`(`id`, `item_name`, `public_name`, `type`, `width`, `length`, `stack_height`, `allow_stack`, `allow_sit`, `allow_walk`, `sprite_id`, `allow_recycle`, `allow_trade`, `allow_marketplace_sell`, `allow_gift`, `allow_inventory_stack`, `interaction_type`, `interaction_modes_count`, `multiheight`, `vending_ids`, `effect_id`, `wired_id`, `is_rare`, `clothing_id`, `extra_rot`, `customparams`, `allow_lay`, `effect_id_male`, `effect_id_female`) VALUES (6, 'table_norja_med', 'Beige Coffee Table', 's', 2, 2, 1.00, '1', '0', '0', 20, '1', '1', '1', '1', '1', 'default', 1, '0', '0', 0, 0, '0', 0, '1', '', '0', 0, 0);
+
+
+Above we have an item base structure for arcturus. Now the variable that says default is the interaction type. IT CAN BE ANY OF THE ABOVE INTERACTIONS YOU SEE!
+
+There are some that are used that we dont see for example, exchange items. There is a reason for that I will explain also in a moment. But lets get back to what i was discussing above. Now you see how we have so many interactions, morningstar uses one.... default. Not sure why but when i look at the design table it doesnt contain its interactions. Now let me bounce back to why the exchange doesnt need an interaction.
+
+INSERT INTO `arcturus`.`items_base`(`id`, `item_name`, `public_name`, `type`, `width`, `length`, `stack_height`, `allow_stack`, `allow_sit`, `allow_walk`, `sprite_id`, `allow_recycle`, `allow_trade`, `allow_marketplace_sell`, `allow_gift`, `allow_inventory_stack`, `interaction_type`, `interaction_modes_count`, `multiheight`, `vending_ids`, `effect_id`, `wired_id`, `is_rare`, `clothing_id`, `extra_rot`, `customparams`, `allow_lay`, `effect_id_male`, `effect_id_female`) VALUES (54516120, 'DF_5_1000_diamond_1000', 'Classic Crown (Worth 1000 Diamonds)', 's', 1, 1, 1.00, '1', '0', '0', 54516120, '1', '1', '1', '1', '1', 'default', 1, '0', '0', 0, 0, '0', 0, '0', '', '0', 0, 0);
+
+
+The variable here we want to pay attention to is this --> DF_5_1000_diamond_1000
+
+the item name... this contains the exchange data. It also contains the swf name, cool right? so we have DF (diamonds) we also have CF for coins or credit furni. Next i have the variable 5, that is the currency id number. For arcturus 5= diamonds. Next is 1000 thats how many diamonds it is going to give the user when they exchange it. Than is the swf name diamond_1000.swf  .... without the swf part.
+
+
+Now lets break down the table a bit and explain the variables because when i created this there was some fields from arcturus that plus didnt use. I also want to take a look at morning stars after to do some comparing
+
+
+		-1: ID this is a random id number BUT it also corrispondes to the items_ids field in catalog_items.
+		-2: Item name- this is the swf name
+		-3: Public name, this is the name we see when the furni is out in the room
+		-4: type, now there are a few variables for this  's','i','e','h','v','r','b','p' look above for details on each
+		-5: width = how wide the item is
+		-6: lenght = how long the items is
+		-7: stack height is how high the item stacks from the floor (0)
+		-8: allow_stack- this allows the user to stack the item,  1 is yes 0 is no
+		-9: allow_sit- if you want the user to be able to sit on the item 1=yes 0= no
+		-10: allow_walk, can the user walk on the item 1=yes 0=no
+		-11: sprite_id-- This corrispondes to the id thats contained in the furnidata
+		-12: Allow recycle, can the item go in the recylcer, we dont need this because habbo did away with it
+		-13: allow_trade, if you can trade the item 1=yes 0=no   default should be 1 
+		-14: allow_marketplace_sell, this allows the user to sell the furni in the marketplace default should be 1
+		-15: allow_gift, this allows the user to send furni as a gift
+		-16: allow inventory stack - what this means is say you buy 5 items if its 1 then all 5 stack. If its set to 0 than they show seperate. Bots for example dont stack, pets as well
+		-17: Interaction type, this is one of the interactions above except for exchange. 
+		-18: inteaction modes count- this is if the item changes state on x amount of clicks. For example a vendingmachine would be 2, you double click it it vends an item
+		-19: multiheight, this variable iv never used. I think it serves no purpose mine are all set to 0
+		-20: vending_ids- this relates to what ever items have an interaction type set as vending_machine-- for example the ice cream machine would have the id for the hand item that gives icecream
+		-21: Effect id- i dont use effects but if i had to guess it would be the id of the effect that has "E" for the type
+		-22: wire_id this is a useless variable because the wired are done through interaction_type`
+		-23: is_rare... yes or no... we dont need this variable mine are set to 0, morning star doesnt use this
+		-24: Clothing id- this corrispondes to another field BUT IS SUPER IMPORTANT FOR CLOTHING I WILL EXPLAIN THIS BELOW 
+		-25: extra_rot, again another variable i have set to 0 and do not use. Morningstar doesnt use this either
+		-26: custom_params THESE ARE FOR GAME TIMERS! Although mine are empty, morningstar uses them, they are the time variables for game counters---> 30,60,120,180,300,600
+		-27: allow_lay this is 1 for bed 0 for not a bed (to lay down)
+		-28: effect_id_male... morningstar uses this but are all set to 0, mine are to
+		-29: effect_id_female.... same as above (male)
+		
+		
+		Now lets jump back to the clothing for a moment. The clothing id...
+		
+		
+		This corrispondes to the table catalog_clothing
+		
+		IINSERT INTO `arcturus`.`catalog_clothing`(`id`, `name`, `setid`) VALUES (19, 'clothing_hheadphones', '3324');
+
+		The id from the item_Base that is in clothing_id = the id here that we see in catalog clothing
+		
+		
+		Now while we are here let me explain catalog clothing
+		
+		-1 = ID
+		-2 = SWF NAME
+		-3 = SETID, this is the set id, you can acually get this from the furnidata under customparams see.... 3841 for example
+		
+		
+		<furnitype id="1100001842" classname="clothing_longmohawk"><revision>65052</revision><clothingdir>0</clothingdir><xdim>1</xdim><ydim>1</ydim><partcolors/><name>Long Mohawk</name><description>Long Mohawk</description><adurl></adurl><offerid>-1</offerid><buyout>0</buyout><rentofferid>-1</rentofferid><rentbuyout>0</rentbuyout><bc>0</bc><excludeddynamic>0</excludeddynamic><customparams>3841</customparams><specialtype>23</specialtype><canstandon>0</canstandon><cansiton>0</cansiton><canlayon>0</canlayon><furniline>rainbow</furniline></furnitype>
+
+		
+		
+		
+		
+		
