@@ -1,0 +1,56 @@
+Catalog Pages
+
+
+
+INSERT INTO `arcturus`.`catalog_pages`(`id`, `parent_id`, `caption`, `icon_image`, `visible`, `enabled`, `min_rank`, `vip_only`, `order_num`, `caption_save`, `page_layout`, `page_headline`, `page_teaser`, `club_only`, `page_special`, `page_text1`, `page_text2`, `page_text_details`, `page_text_teaser`, `includes`, `room_id`, `icon_color`) VALUES (10167, 10069, 'Pastel Bundle', 10026, '1', '1', 1, '0', 250, '', 'single_bundle', 'spromo_pastel', 'spromo_pastel', '0', '', 'Cute stuffed toys and pastel rainbow furni: a fantastic combination, we think you ll agree! Every single furni in this bundle is 100% exclusive and will never be found in our Catalogue for sale individually. What a bargain!', 'Buy direct, and save', '', '<font size=\'20px\' color=\'#8b0000\'> What\'s Included?</font>', '', 0, 1);
+
+
+
+INSERT INTO `arcturus`.`catalog_pages`(`id`, `parent_id`, `caption`, `icon_image`, `visible`, `enabled`, `min_rank`, `vip_only`, `order_num`, `caption_save`, `page_layout`, `page_headline`, `page_teaser`, `club_only`, `page_special`, `page_text1`, `page_text2`, `page_text_details`, `page_text_teaser`, `includes`, `room_id`, `icon_color`) VALUES (10169, 10006, 'Plush Unicorns', 64, '1', '1', 1, '0', 1, ' ', 'default_3x3', 'unicorn_teaser', 'unicorn_teaser', '0', ' ', ' ', ' ', ' ', ' ', ' ', 0, 1);
+
+
+
+so above i have two sqls for catalog pages. There are many different types of pages :
+
+
+'default_3x3','club_buy','club_gift','frontpage','spaces','recycler','recycler_info','recycler_prizes','trophies','plasto','marketplace','marketplace_own_items','spaces_new','soundmachine','guilds','guild_furni','info_duckets','info_rentables','info_pets','roomads','single_bundle','sold_ltd_items','badge_display','bots','pets','pets2','pets3','productpage1','room_bundle','recent_purchases','default_3x3_color_grouping','guild_forum','vip_buy','info_loyalty','loyalty_vip_buy','collectibles','frontpage_featured'
+
+
+
+
+For this i will explain the two above, the first is a room bundle the second is a default page_headline`
+
+Ill start with the default first because the bundle has few differences.
+
+
+
+INSERT INTO `arcturus`.`catalog_pages`(`id`, `parent_id`, `caption`, `icon_image`, `visible`, `enabled`, `min_rank`, `vip_only`, `order_num`, `caption_save`, `page_layout`, `page_headline`, `page_teaser`, `club_only`, `page_special`, `page_text1`, `page_text2`, `page_text_details`, `page_text_teaser`, `includes`, `room_id`, `icon_color`) VALUES (10169, 10006, 'Plush Unicorns', 64, '1', '1', 1, '0', 1, ' ', 'default_3x3', 'unicorn_teaser', 'unicorn_teaser', '0', ' ', ' ', ' ', ' ', ' ', ' ', 0, 1);
+
+
+
+
+				1:  Id, this is a page id number can be what ever. The catalog items page id links to this
+				2:  Parent id, this is the id of the page its inside of. Think of it as a master page and the new page is a subpage for example you might have Rares (parent id is 100/ rares id =100) and then thrones which id lets say is 110 the parent would be 100.
+				3: Caption = page name
+				4: icon image= catalog image icon... this is a png
+				5: visible= if the user can see it or not
+				6: enabled= if a user can use the page, this doesnt make it visible or not just usuable
+				7: min_rank = the rank a user has to be to access the page
+				8: vip_only= must be HC/VIP to buy from that page
+				9: order number= the order the page is in- For example frontpage=1 club=2 staff=3 and display in that order
+				10: caption_Save= a unique name you can give to access that page from multiple locations for example the catalog front page offer, you can also use this name for the cms new images to open the room from the 
+				web page. Chocolatey uses this feature. Also on the hotel view when u click a button u use this name to link it
+				11: pagelayout = the page layout for example default_3x3  or bots or pets or room_bundle. 
+				12: page_headline= the top headline
+				13: page_teaser throguth includes are just texts for the page itself. SOME OF THESE ARE UNIQUE FOR ROOM BUNDLES. the reaon for so many is because they each connect to a specific part of the page
+				14: room_id = this was sapose to be used for room bundles but doesnt work for me
+				15: icon_color- if you want to change the color of the icon box for a catalog page icon... these dont work.
+				
+				
+				As i mentioned above, room bundles are very similar its everything above but somethings in the text fields change this and the page_layout as you can see in the very first statement above
+				
+				
+				
+	This is the basics to the catalog_page
+		
+			
