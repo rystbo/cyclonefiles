@@ -1,0 +1,41 @@
+
+
+Song_id  and extradata are covered here-
+
+This comes from 
+
+INSERT INTO `arcturus`.`catalog_items`(`id`, `page_id`, `item_ids`, `catalog_name`, `cost_credits`, `cost_points`, `cost_diamonds`, `amount`, `limited_sells`, `limited_stack`, `offer_active`, `extradata`, `badge`, `offer_id`, `song_id`, `order_number`, `points_type`, `have_offer`, `club_only`) VALUES (104205, 912519, '1007', 'SONG TeemuP2', 1, 0, 0, 1, 0, 0, '1', 'ballad_of_bonnie', '', -1, 1, 14, 0, '1', '0');
+
+
+As we see here, the "Extra_data" variable is the name of the code of the sound track, look down below you will see it as the second variable in the "soundtracks" table.
+
+
+Which then links to the song. Below the "soundtracks" table is this song.
+
+For example if we have song_id 1, that would corrisponde to the below which is id number 1
+
+
+
+INSERT INTO `arcturus`.`soundtracks`(`id`, `code`, `name`, `author`, `track`, `length`) VALUES (1, 'ballad_of_bonnie', 'The Ballad of Bonnie Blonde', 'Pixel! at the Disco', '1:371,8;374,4;378,4;0,4;378,4;0,4;377,4;378,4;0,6;371,4;0,4;370,3;377,2;0,7:2:353,24;358,4;363,4;353,10;367,4;353,4;367,4;353,8:3:0,4;291,2;365,2;0,2;365,2;377,2;365,2;377,2;365,2;377,2;0,2;359,4;352,4;357,1;0,1;365,2;0,2;292,4;0,3;357,1;292,4;0,3;357,1;292,4;296,4:4:0,2;368,22;354,4;368,26;361,8:', 124);
+
+
+
+
+here i belive we can remove a few variables in this structure because they will be shown in the catalog_items, i could be wrong though. Because the variables in catalog_items are specific to the catalog itself (when you view an item in the catalog)  
+
+Once you purchase the soundtrack, its out side of the catalog, then when you place it in the jukebox, ect. it will display the name and author. 
+
+So here is a bit better of an explination of the song_id that is in catalog_items
+
+----> Overall it corrispondes to the soundtracks table,
+the sound tracks table contains 
+
+		-1: the id (this is the id of the soundtrack that links to the catalog item. The catalog item displays the song disk itself)
+		-2: Code, this is the extra_data that is in the catalog_items
+		-3: Name, this is the song name  (This is what shows when you play it in the sound machine)
+		-4: Author, who its by  (This also shows when you play it in a sound machine)
+		-5: track- this is the id that is in the mp3 folder in your dcr folder (swfs) 
+		-6: length = in seconds how long the song is.
+		
+		
+Now, if we were to adjust this, we could potenially edit the two variables that link it, because song id is one, and than extra data is another. We could potenialy remove the extra_data variable from the catalog_items and than the song id would link the sql to the soundtrack id. We could then also iliminate the code variable from soundtracks. 
